@@ -1,0 +1,14 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: name-app1
+    src: .
+    engine: python3.9
+    primary: true
+    public_routes:
+      - "/open"
+    presets:
+      env:
+        - name: TELEGRAM_BOT_TOKEN
+          description: Telegram Bot Key
+          default: "6185920160:AAGpnGquzlkRP2_W5E0uok3yllr2UT0aaK4"
